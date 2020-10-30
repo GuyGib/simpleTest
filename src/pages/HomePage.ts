@@ -41,9 +41,9 @@ export class HomePage{
     async getAllCategories() {
         let elementsList = await this.myDriver.getAllElementByID("c_cat10")
         let checkSize:Boolean = false
-        if(elementsList.length == 10){
+        if(elementsList.length == 26){
             checkSize= true
         }
-        assert.isTrue(checkSize,"There is a wrong number of categories expected: "+10+" actual: "+elementsList.length+"\n")
+        assert.isTrue(checkSize,"There is a wrong number of categories expected: "+26+" actual: "+elementsList.length+"\n")
     }
 }

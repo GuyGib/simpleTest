@@ -1,10 +1,11 @@
 import {HomePage} from "../pages/HomePage";
 
-describe("Suite", () => {
+describe("Checkin fxp", () => {
     const homePage = new HomePage("https://www.fxp.co.il/loginpage.php","chrome" );
-    before("Before", async () => {
+    before("Before",  () => {
+
     })
-    it("Open google and verify it is opened", async () => {
+    it("checking fxp is loading ", async () => {
         await homePage.goToHomePage()
         await homePage.checkLogIn()
         await homePage.getAllCategories()
